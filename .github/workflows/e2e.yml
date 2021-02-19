@@ -26,3 +26,5 @@ jobs:
         with:
           record: true
           config: baseUrl=${{ github.event.inputs.deployPrimeUrl }}
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
