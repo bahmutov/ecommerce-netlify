@@ -5579,10 +5579,10 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-netlify-plugin-github-dispatch@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/netlify-plugin-github-dispatch/-/netlify-plugin-github-dispatch-1.0.2.tgz#8a2e06a2b52bcc4bf2754790e105df5c99b2e57e"
-  integrity sha512-yPewU9KCzkuY2iWjADiI2Y30MRZ1possU1fD/XgQitoeAd/X69jPLi9GSAI9lA9enpC7WW3xlFFHgVMz1lWE2w==
+netlify-plugin-github-dispatch@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-github-dispatch/-/netlify-plugin-github-dispatch-1.0.3.tgz#904982925bf6e466821b667033ef5224933916d9"
+  integrity sha512-lT8tYpvUtmFUCEnobZRgwu6O2BBkmeQt+vJPpSV7uQrTnuP5YaO3ZeVwwc4HHYEhxpMhNr3lvdvDApP+zNRZ0A==
   dependencies:
     "@octokit/rest" "18.1.0"
     debug "4.3.1"
