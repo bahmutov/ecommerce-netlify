@@ -32,7 +32,7 @@ describe('e-commerce site', () => {
       method: 'POST',
       pathname: '/.netlify/functions/create-payment-intent'
     }).as('paymentIntent')
-    cy.contains('nav li', 'Cart').click()
+    cy.contains('nav li', 'Cartz').click()
     cy.log('**cart page**')
     cy.wait('@paymentIntent').its('response.body').then(JSON.parse).should('have.property', 'clientSecret')
     // always confirm the total before paying
