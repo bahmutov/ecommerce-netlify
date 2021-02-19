@@ -10,7 +10,7 @@ on:
         description: Deployed URL
         required: true
 jobs:
-  show-event:
+  run-tests:
     runs-on: ubuntu-20.04
     steps:
       - run: echo "Current Git info $GITHUB_WORKFLOW $GITHUB_REF $GITHUB_SHA"
@@ -24,4 +24,7 @@ jobs:
       - name: Cypress run 🏃‍♀️
         uses: cypress-io/github-action@v2
         with:
+          record: true
           config: baseUrl=${{ github.event.inputs.deployPrimeUrl }}
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
