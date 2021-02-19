@@ -7,7 +7,9 @@
 
 Demo site is here: [E-Commerce Store](https://tested-ecommerce-store.netlify.app/)
 
-Forked from [](https://github.com/sdras/ecommerce-netlify) that shows how to build an ecommerce site using Nuxt, Netlify, and Netlify Functions.
+Forked from [sdras/ecommerce-netlify](https://github.com/sdras/ecommerce-netlify) that shows how to build an ecommerce site using Nuxt, Netlify, Stripe, and Netlify Functions.
+
+Deploy and testing setup described in the blog post [Deploy E-Commerce Site to Netlify and Test Using GitHub Actions](https://glebbahmutov.com/blog/tested-ecommerce/)
 
 ## Local
 
