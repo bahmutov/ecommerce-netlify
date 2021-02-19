@@ -16,12 +16,12 @@ jobs:
       - run: echo "Current Git info $GITHUB_WORKFLOW $GITHUB_REF $GITHUB_SHA"
       - run: echo "Testing url ${{ github.event.inputs.deployPrimeUrl }}"
 
-      # - name: Checkout ⬇️
-      #   uses: actions/checkout@v2
+      - name: Checkout ⬇️
+        uses: actions/checkout@v2
 
-      # # test the deployed site using
-      # # https://github.com/cypress-io/github-action
-      # - name: Cypress run 🏃‍♀️
-      #   uses: cypress-io/github-action@v2
-      #   with:
-      #     config: baseUrl=${{ github.event.inputs.deployPrimeUrl }}
+      # test the deployed site using
+      # https://github.com/cypress-io/github-action
+      - name: Cypress run 🏃‍♀️
+        uses: cypress-io/github-action@v2
+        with:
+          config: baseUrl=${{ github.event.inputs.deployPrimeUrl }}
