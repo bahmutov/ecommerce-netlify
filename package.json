@@ -10,7 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
-  "dependencies": {
+    "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.0.0",
     "gsap": "^2.1.3",
