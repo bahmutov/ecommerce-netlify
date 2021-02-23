@@ -24,6 +24,9 @@ jobs:
       - name: Cypress run 🏃‍♀️
         uses: cypress-io/github-action@v2
         with:
+          # we do not need to install any production dependencies
+          # this should save time
+          install-command: npm install --only=dev
           record: true
           config: baseUrl=${{ github.event.inputs.deployPrimeUrl }}
         env:
