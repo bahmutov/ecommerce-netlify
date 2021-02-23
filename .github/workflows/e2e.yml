@@ -12,6 +12,9 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-20.04
+    # Docker image with Cypress pre-installed
+    # https://github.com/cypress-io/cypress-docker-images/tree/master/included
+    container: cypress/included:6.5.0
     steps:
       - run: echo "Current Git info $GITHUB_WORKFLOW $GITHUB_REF $GITHUB_SHA"
       - run: echo "Testing url ${{ github.event.inputs.deployPrimeUrl }}"
@@ -24,9 +27,10 @@ jobs:
       - name: Cypress run 🏃‍♀️
         uses: cypress-io/github-action@v2
         with:
-          # we do not need to install any production dependencies
+          # we do not need to install any dependencies
+          # because we are using a Docker image with pre-installed Cypress
           # this should save time
-          install-command: npm install --only=dev
+          install: false
           record: true
           config: baseUrl=${{ github.event.inputs.deployPrimeUrl }}
         env:
