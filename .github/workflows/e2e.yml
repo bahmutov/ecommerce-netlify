@@ -25,7 +25,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           # We only need cypress, this should save time
-          install-command: yarn add -D cypress
+          install-command: node ./remove-deps && yarn install --no-lockfile
           record: true
           config: baseUrl=${{ github.event.inputs.deployPrimeUrl }}
         env:
